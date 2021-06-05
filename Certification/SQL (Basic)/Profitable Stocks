@@ -1,0 +1,9 @@
+# Profitable Stocks
+
+/*
+Enter your query below.
+Please append a semicolon ";" at the end of the query
+*/
+SELECT s.stock_code
+FROM price_today as s, price_tomorrow as p
+WHERE p.stock_code = s.stock_code and p.price > s.price ;
